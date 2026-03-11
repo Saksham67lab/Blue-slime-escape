@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Slime Escape</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Menu Screen -->
+    <div id="menu-screen" class="menu-screen">
+        <div class="menu-content">
+            <h1 class="game-title">Blue Slime Escape</h1>
+            <p class="made-by">Made by Saksham</p>
+            <button id="start-btn" class="start-btn">START</button>
+            <div class="slime-arrow">
+                <div class="slime-blob"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <!-- Score Display -->
+    <div id="score-display" class="score-display" style="display: none;">
+        <div>Score: <span id="current-score">0</span></div>
+        <div>High Score: <span id="high-score">0</span></div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="game-over-screen" style="display: none;">
+        <div class="game-over-content">
+            <h2>GAME OVER</h2>
+            <p>Score: <span id="final-score">0</span></p>
+            <p>Highest Score: <span id="final-high-score">0</span></p>
+            <p class="restart-text">Press R to Restart</p>
+            <p class="made-by">Made by Saksham</p>
+        </div>
+    </div>
+
+    <!-- Game Menu Screen -->
+    <div id="game-menu-screen" class="game-menu-screen" style="display: none;">
+        <div class="game-menu-content">
+            <h2>GAME MENU</h2>
+            <div class="menu-section">
+                <h3>Controls:</h3>
+                <p>Space → Jump</p>
+                <p>Mouse Click → Jump</p>
+                <p>R → Restart</p>
+                <p>M → Menu</p>
+            </div>
+            <div class="menu-section">
+                <h3>Objective:</h3>
+                <p>Jump over obstacles and survive as long as possible.</p>
+            </div>
+            <p class="made-by">Made by Saksham</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
